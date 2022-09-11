@@ -1,0 +1,37 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+    margin: 10px;
+}
+li{
+    display: inline-block;
+    padding: 15px;
+    margin: 20px;
+    background-color: yellow;
+}
+.ul{
+    margin-top: 50px;
+    border: 2px solid red;
+    margin-left:20px ;
+}
+.main{
+    border: 1px solid blue;
+    width: 500px;
+    height: 498px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.sub{
+    border: 2px black solid;
+}
+ h1{
+    position:sticky;
+    left: 0;
+    top: 0;
+    background-color: yellow;
+   
+}

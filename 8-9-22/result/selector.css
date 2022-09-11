@@ -1,0 +1,30 @@
+.p1-child1 .h1{
+    color: red;
+}
+.p1-heading1{
+    color: blueviolet;
+}
+.p1-para{
+    color: green;
+}
+.image{  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.margin{
+    width: 500px;
+    height: 500px;
+    border: 2px solid red;
+    margin-left: 20px;
+    margin-top: 50px;
+    padding: 20px;
+}
+ .margin-top {
+    margin-top: 40px;
+ }
+.margin-top b{
+    border: 1px solid red;
+    padding: 10px;
+ }

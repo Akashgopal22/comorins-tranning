@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    margin: 20px;
+}
+
+.section1{
+    float: left;
+}
+.rec{
+    width: 300px;
+    height: 200px;
+    border: 3px solid #5a93f4;
+    margin:0 20px 0;
+    float: left;   
+}
+.section2{
+    margin-top: 10px;
+    float: left;
+}
+.rec1{
+    width: 300px;
+    height: 200px;
+    border: 3px solid #5a93f4;
+    float: left;
+    margin: 0 20px 0;    
+}
