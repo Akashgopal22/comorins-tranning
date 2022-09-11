@@ -9,7 +9,7 @@
 .child{
     width: 3.25% ;
     background-color: #fde4e4;
-    margin: 20px;
+    margin:20px 5px 0;
     height: 1200px;
    display: inline-block;
    border: 3px solid #d0fdfd;
