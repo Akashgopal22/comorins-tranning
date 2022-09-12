@@ -3,14 +3,14 @@
     padding: 0;
 }
 .main{
-    width: 100%;
-    margin-left: 50px;
+    width: 1200px;
+    margin-left: 10px;
 }
 .child{
-    width: 3.25% ;
+    width: 7.5% ;
     background-color: #fde4e4;
-    margin:20px 5px 0;
-    height: 1200px;
+    margin-top:20px;
+    height: 800px;
    display: inline-block;
    border: 3px solid #d0fdfd;
 }

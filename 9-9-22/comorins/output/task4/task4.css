@@ -3,7 +3,7 @@
     padding: 0;
 }
 .main{
-    width: 1000px;
+    width: 50%;
     height:800px;
     border: 3px solid #707070;
     margin:20px 50px 0;
@@ -41,11 +41,11 @@
     height: 150px;
     background-color:#00b32e;
     border: 3px solid #707070;
-    left: 400px;
-    top: 325px;
+    left: 50%;
+    top: 50%;
     position: absolute;
-    
-
+    transform: translate(-50%,-50%);
+   
  }
  .rec5{
     width: 200px;
