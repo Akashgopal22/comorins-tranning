@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+} 
+
+.main{
+    width: 100%;
+}
+.header{
+    position: sticky;
+    top: 0;
+}
+
+.nav{
+    background-color: #333;
+    height: 50px;
+    text-align: center;   
+}
+
+
+.nav li{
+    display: inline-block;
+    padding:10px;
+    
+}
+.nav li a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.5rem;
+}
+p{
+    font-size: 20px;
+}
+.indexsection{
+    margin-top: 30px;
+}
+.unorder{
+    margin-left: 20px;
+     background-color: yellow;
+     display: inline-block;
+     padding-left:20px;
+     width: 47%;
+     margin-top: 30px;
+}
+.order{
+    margin-left: 20px;
+    background-color: yellow;
+    display: inline-block;
+    padding-left:20px;
+    width: 47%;
+    margin-top: 30px;
+}
+form{
+    width:50%;
+    margin: 0 auto;
+    margin-top: 20px
+}
+
+.input1 input{
+    border: 1px solid #ced4da;
+    border-bottom: 3px solid  #FAA61A;
+    width: 400px;
+    height: 30px;
+    display: inline-block;
+
+}
+form label{
+    width: 100px;
+    display: inline-block;
+}
+img{
+    display: none;
+}
+input[type=color]{
+    height: 15px;
+}
+
+input[type=submit]{
+    padding:  8px   ;
+    color: white;
+    background-color:#FAA61A ;
+    border: none;
+    border-radius:2px;
+    margin-left: 431px;
+    cursor: pointer;
+    
+}
+form textarea{
+    border: 1px solid #ced4da;
+    border-bottom: 3px solid  #FAA61A;
+    display: inline-block;
+
+}
+
