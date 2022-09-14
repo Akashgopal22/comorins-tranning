@@ -22,10 +22,9 @@ nav{
 }
 section{
     margin-top: 10px;
-    padding-top: 75px;
-    padding-bottom: 200px;
     background-color: #878787;
     color: white;
+    overflow: hidden;
 }
 footer{
     margin-top: 10px;
@@ -35,3 +34,25 @@ footer{
     color: white;
 
 }
+.Slideshow{
+    background-color: #525252;
+    margin: 20px 5px;
+    padding: 100px;
+}
+
+.grid .col:first-child{
+    margin-left: 0;
+}
+.grid{
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+.col{
+    width: 32.3%;
+    height: 250px;
+    background-color: white;
+    display: inline-block;
+    margin-left: 12px;
+
+}
+
