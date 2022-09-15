@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #e3dede;
+}
+.main{
+    margin: 10px;
+    background-color:#f1f1f1;
+}
+header{
+    text-align: center;
+}
+header p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+nav{
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    
+}
+ul li:last-child{
+    float: right;
+    margin-right: 15px;
+}
+nav li{
+    display: inline-block;
+    padding: 10px 0 10px 15px;
+}
+
+section{ 
+    margin-top: 20px;
+    width: 100%;
+}
+.section1{
+    display: inline-block;
+    width: 70%;
+}
+.secA{
+    background-color: white;
+}
+.content{
+   padding: 15px 0 24px 15px;
+}
+.content p{
+    margin-top: 10px;
+}
+.image{
+    width: 1025px;
+    background-color: #aaaaaa;
+    margin-top: 10px;
+    padding-bottom: 100px;
+}
+.image p{
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-top: 15px;
+    
+}
+.secB{
+    background-color: white;
+    margin-top: 20px;
+
+}
+.section2{
+    width: 28%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 25.5px;
+
+}
+.sub1{
+    background-color: white;
+    padding:15px 0 24px 15px;
+}
+.sub2{
+    background-color: white;
+    margin-top: 20px;
+    padding:15px 0 24px 15px;
+
+}
+.sub3{
+    background-color:white;
+    margin-top: 20px;
+    padding:15px 0 24px 15px;
+}
+.imageside{
+    width: 379px;
+    background-color: #aaaaaa;
+    padding: 15px 0 40px 15px;
+    margin-top: 10px;
+    
+}
+
+.sub1 p{
+    margin-top: 10px;
+}
+h4{
+    margin-bottom: 10px;
+}
+.imageside1{
+    width: 379px;
+    background-color: #aaaaaa;
+    padding: 15px 0 40px 15px;
+
+}
+.sub3 p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+footer{
+    background-color: #ccc7c7;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
