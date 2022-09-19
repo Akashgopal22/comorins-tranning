@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media(min-width:576px){
+    .child{
+        width: 100%;
+        background-color: red;
+        border: 1px solid black;
+        text-align: center;
+    }
+}
+@media(min-width:767px){
+    .child{
+        width: 49%;
+        display: inline-block;
+        background-color: green;
+    }
+}
+@media(min-width:991px){
+    .child{
+        width: 32%;
+        display: inline-block;
+        background-color: blue;
+    }
+}
+@media(min-width:1200px){
+    .child{
+        width: 24%;
+        display: inline-block;
+        background-color: orange;
+    }
+}

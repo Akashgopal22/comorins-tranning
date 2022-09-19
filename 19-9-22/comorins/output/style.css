@@ -1,0 +1,28 @@
+.parent{
+    background-color: black;
+    color: white;
+}
+
+@media(min-width:575px) {
+    .parent{
+        background-color: red;
+
+    }
+
+
+}
+@media(min-width:767px) {
+    .parent{
+        background-color: green;
+
+    }
+
+
+}
+@media(min-width:1200px) {
+    .parent{
+        background-color:yellow;
+        color: black;
+
+    }
+}
