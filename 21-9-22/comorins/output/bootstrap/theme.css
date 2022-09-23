@@ -1,0 +1,16 @@
+body{
+    background-color: #cbc6c6;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.firstrec{
+    padding-bottom: 150px;
+}
+.alignflex{
+    padding: 15px;
+}
+.secondrec{
+    padding-bottom: 50px;
+}

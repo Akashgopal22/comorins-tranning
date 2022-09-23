@@ -1,0 +1,14 @@
+.firstcol{
+    border: 2px solid white;
+    height: 200px;
+}
+.secondcol{
+    border: 1px solid white;
+    background-color:red;
+    height: 200px;
+}
+.grid{
+    background-color: yellow;
+    border: 1px solid black;
+    height: 200px;
+}
