@@ -4,7 +4,9 @@
 }
 @media(min-width:501px)
 {
-        
+     body{
+        width: 100%;
+     }   
     nav{
         padding: 18px 18px;
         background-color: #FCFCFC;
@@ -44,10 +46,10 @@
 
     .nav1 li{
         display: inline-block;
-        margin-left:68px;
+        padding-left:68px;
     }
     .nav1 li:first-child{
-        margin-left: 0;
+        padding-left: 0;
     }
     a:hover{
         color: #EC483C;
@@ -117,7 +119,7 @@
         font-weight: 700;
         font-size: 19px;
         line-height: 34px;
-        text-align: left;
+        padding-left: 50px;
         width: 512px;
         color: white;
     }
@@ -228,10 +230,10 @@
         font-size: 20px;
 
     }
-    .pages li:nth-child(2) button{
+    /* .pages li:nth-child(2) button{
         background-color: #EC483C;
         color: white;
-    }
+    } */
     footer{
         background-color: #494D56;
     }
@@ -394,7 +396,10 @@
 
     .nav1 li{
         display: inline-block;
-        margin-left:10px;
+        padding-left:10px;
+    }
+    .nav1 li:first-child{
+        padding-left: 0;
     }
   
     a:hover{
@@ -482,7 +487,7 @@
     .subbanB input {
         padding: 17px 204px 17px 24px;
         border-radius: 10px;
-        display: none;
+
     }
     .wrap{
         background-color: #F5F5F5;
@@ -581,10 +586,10 @@
         font-size: 20px;
 
     }
-    .pages li:nth-child(2) button{
+    /* .pages li:nth-child(2) button{
         background-color: #EC483C;
         color: white;
-    }
+    } */
     footer{
         background-color: #494D56;
     }
@@ -757,10 +762,10 @@
 
     .nav1 li{
         display: inline-block;
-        margin-right: 7px;
+        padding-right: 7px;
     }
     .nav1 li:first-child{
-        margin-left: 0;
+        padding-left: 0;
     }
     a:hover{
         color: #EC483C;
@@ -963,10 +968,16 @@
         font-size: 20px;
 
     }
-    .pages li:nth-child(2) button{
+    .pages a :hover{
         background-color: #EC483C;
         color: white;
+        cursor: pointer;
+
     }
+    /* .pages li:nth-child(2) button{
+        background-color: #EC483C;
+        color: white;
+    } */
     footer{
         background-color: #494D56;
     }
@@ -1139,10 +1150,10 @@
 
     .nav1 li{
         display: inline-block;
-        margin-left:68px;
+        padding-left:24px;
     }
     .nav1 li:first-child{
-        margin-left: 0;
+        padding-left: 0;
     }
     a:hover{
         color: #EC483C;
@@ -1344,10 +1355,10 @@
         font-size: 20px;
 
     }
-    .pages li:nth-child(2) button{
+    /* .pages li:nth-child(2) button{
         background-color: #EC483C;
         color: white;
-    }
+    } */
     footer{
         background-color: #494D56;
     }
