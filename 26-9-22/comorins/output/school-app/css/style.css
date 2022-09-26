@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins';
+    font-style: normal;
+    background-color: white;
+}
+.nav-style{
+    background-color: #0295A9;
+    border-radius: 40px 40px 0 0;
+}
+.nav-style li{
+    padding-right: 40px;
+}
+.nav-style ul{
+    padding-left: 108px;
+    
+}
+.nav-style a{
+    text-decoration: none;
+    color: #04162F;
+    font-size: 24px;
+    font-weight: 500;
+}
+.button1{
+    padding-right: 120px;
+}
+.nav-style button{
+    background: #036370;
+    border-radius: 60px; 
+    color: white; 
+    padding: 12px 25px;
+    font-size: 24px; 
+    font-weight: 500;
+    
+}
+.firstrow{
+    margin-top: 180px;
+}
+.firstrow h1{
+    letter-spacing: -0.5px;
+    color: #04162F;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 130%;
+
+}
+.firstrow p{
+    color: rgba(0, 0, 0, 0.53);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+}
+.firstrow a{
+    text-decoration: none;
+    border-radius: 60px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 17px 37px;
+    
+
+}
+.dashed{
+    border: 2px dashed rgba(0, 0, 0, 0.33); 
+}
+.secondrow{
+    margin-top: 176px;
+}
+.secondrow p{
+    color: rgba(0, 0, 0, 0.61);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+
+}
+.check{
+    background: #FFBB12;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 110px;
+    padding: 24px 36px;
+}
+.check span{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+
+}
+.fourthrow{
+    margin-top: 61px;
+}
+.smarty h2{
+    color: #21C1D7;
+    display: inline-block;
+}
+.smarty a{
+    padding: 18px 40px;
+    border-radius: 60px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+.fifthrow p{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+
+}
+.sixthrow{
+    margin-top: 263px;
+}
+.sixthrow h2{
+    color: rgba(0, 0, 0, 0.69);
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 72px;
+}
+.sixthrow p{
+    color: #6B6B6B;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+}
+.eightrow h2{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 72px;
+    color: #4583DA;
+
+}
+.eightrow p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    color: #818181;
+}
+.eightrow a{
+    text-decoration: none;
+    background: #000000;
+    border-radius: 60px;
+    color: white;
+    padding: 15px 50px;
+}
+.bottomheading{
+    margin-top: 230px;
+}
+.eightrow{
+    margin-top: 322px;
+}
+.ninthrow{
+    margin-top: 67px;
+}
+.tenthrow h2{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 72px;
+    color: #04162F;
+
+}
+.tenthrow{
+    margin-top: 126px;
+}
+.tenthrowp{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    color: #656565;
+}
+.tenthrow li{
+    list-style: none;
+    padding-bottom: 40px;
+}
+.tenthrow form{
+    background: #FBFBFB;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+.formalter{
+    padding: 74px 126px 39px 112px;
+
+}
+.formalter input{
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 60px;
+    border: none;
+}
+.formalter textarea{
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+.formalter button{
+    background: #04162F;
+    border-radius: 60px;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.5px;
+}
+footer{
+    background: #0295A9;
+    border-radius: 0px 0px 40px 40px;
+    overflow: hidden;
+}
+.elvenrow{
+    margin-top: 188px;
+    margin-bottom: 116px;
+}
+.elvenrow button{
+    border: none;
+    background: #FFFFFF;
+    border-radius: 60px;
+    padding: 11px 43px;
+}
+.grouptext{
+    background: none;
+    border: 1px solid #FFFFFF;
+    border-left: none;
+    border-radius: 60px;
+   
+}
+.bottominput input{
+    background: none;
+   
+    border: 1px solid #FFFFFF;
+    border-radius: 60px;
+    border-right: none;
+}
+.bottominput input::placeholder{
+    color: black;
+}
+.grouptext1{
+    background: none;
+    box-shadow: inset 0px  4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 60px;
+    border: none;
+}
+.elvenrow h2{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+    color: #04162F;
+}
+.elvenrow p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    color: #FFFFFF;
+}
+.bottomrow{
+    padding-left: 81px;
+}
+.bottomrow li{
+    display: inline-block;
+    list-style: none;
+    padding-right: 52px;
+}
+.bottomrow2 li{
+   padding-bottom: 13px;
+
+}
+li{
+    list-style: none;
+}
+.bottomrow a{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 170.53%;
+    letter-spacing: 0.5px;
+    color: rgba(0, 0, 0, 0.81);
+}
+.bottomrow2 a{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 170.53%;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+}
+.bottomrow2{
+    padding-left: 81px;
+}
