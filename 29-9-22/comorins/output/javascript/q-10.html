@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>power</title>
+</head>
+<body>
+    <input type="number" name="" id="power">
+    <input type="number" name="" id="power1">
+
+    <button onclick="power()" >power</button>
+    <script>
+        function power(){
+            let a=document.getElementById("power").value;
+            let b=document.getElementById("power1").value;
+            let result=Math.pow(a,b)
+            document.getElementById("power").value=""
+            console.log(result)
+        }
+    </script>
+    
+</body>
+</html>

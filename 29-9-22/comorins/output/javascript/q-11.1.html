@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isnan</title>
+</head>
+<body>
+    <input type="text" id="nan">
+    <button onclick="isNumber()">find</button>
+    <script>
+        function isNumber(){
+            let a=document.getElementById("nan").value;
+            
+           if(isNaN(a)){
+            console.log("given is  a string")
+           }
+           else{
+            console.log("given is number")
+           }
+        }
+    </script>
+    
+</body>
+</html>

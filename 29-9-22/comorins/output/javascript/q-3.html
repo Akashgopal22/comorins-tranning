@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=g, initial-scale=1.0">
+    <title>grade assigner</title>
+</head>
+<body>
+    <input type="text" id="grade">
+    <button onclick="assignGrade()">evaluate</button>
+    <script>
+        function assignGrade(){
+            let x=document.getElementById("grade").value;
+        if (x=="A"||x=="a"){
+            console.log("Excellent");
+        }
+        else if(x=="B"||x=="b"){
+            console.log("Good")
+            
+        }
+        else if(x=="C"||x=="c"){
+            console.log("Average")
+            
+        }
+        else if(x=="D"||x=="d"){
+            console.log(" Below average")
+            
+        }
+        else if(x=="F"||x=="f"){
+            console.log("fail")
+            
+        }
+        else{
+            console.log("enter the proper grade a,b,c,d or f")
+        }
+        document.getElementById("grade").value=""
+
+        }
+       
+       
+    </script>
+    
+</body>
+</html>

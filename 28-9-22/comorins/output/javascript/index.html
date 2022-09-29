@@ -115,13 +115,28 @@
     </script>
     <input type="text" id="item">
     <button onclick="addlist()">Add</button>
+    <ul id="order"></ul>
     <script>
         let list=[];
         function addlist(){
             let todo=document.getElementById("item").value;
             list.push(todo);
             console.log(list);
+            document.getElementById("item").value=null;
+            display(list);
         }
+        function display(list_array){
+            let element="";
+            for(let i=0;i<list_array.length;i++){
+                element=element+"<li>"+list_array[i]+"</li>"
+
+            }
+            document.getElementById("order").innerHTML=element;
+
+        }
+        
+        
+        
     </script>
 
 </body>

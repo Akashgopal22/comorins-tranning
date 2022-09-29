@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>largestnumber</title>
+</head>
+<body>
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <button onclick="findLargest()">compare</button>
+    <script>
+        function findLargest(){
+            let x=document.getElementById("num1").value;
+            let y=document.getElementById("num2").value;
+            if(x>y){
+                console.log(x +"is greater")
+            }
+            else if(x<y){
+                console.log(y +"is greater")
+            }
+            else if(x==y){
+                console.log(x +"is equal")
+            }
+            else {
+                console("enter value properly")
+            }
+            document.getElementById("num1").value="";
+            document.getElementById("num2").value="";
+    
+        }
+    </script>
+    
+</body>
+</html>

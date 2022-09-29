@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word translator</title>
+</head>
+<body>
+    <input type="text" id="language">
+    <button onclick="helloWorld()"  id="clr">translate</button>
+    <script>
+        function  helloWorld(){
+            let a=document.getElementById("language").value;
+            document.getElementById("language").value=""
+            if(a=="en"){
+                console.log("hello world")
+            }
+            else if(a=="de"){
+                console.log("Guten Tag ")
+
+            }
+            else if(a=="ar"){
+                console.log("مرحبا بالعالم")
+            }
+            else{
+                console.log("enter the valid language in en,de or ar");
+            }
+
+
+        }
+    </script>
+
+    
+</body>
+</html>
