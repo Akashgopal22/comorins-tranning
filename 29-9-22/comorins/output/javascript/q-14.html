@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>triangle</title>
+</head>
+<body>
+    <script>
+        function findTriangleType(x,y,z){
+            if(x==y &&y==z){
+                console.log("equilateral triangle");
+
+            }
+            else if(x==y || y==z){
+                console.log("Isosceles triangle")
+            }
+            else{
+                console.log("Scalene triangle")
+            }
+
+        }
+        findTriangleType(30,30,30);
+        findTriangleType(30,20,20);
+        findTriangleType(20,30,40)
+    </script>
+    
+</body>
+</html>

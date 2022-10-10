@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pattern</title>
+    <title>check range</title>
 </head>
 <body>
     <script>
-        function printPattern(){
-            let pattern=[];
-            for(let i=0;i<7;i++){
-                pattern.push(i);
-                console.log(pattern);
+        function checkInRange(a){
+            if(a>=80&&a<=90){
+                console.log("Between the range")
+            }
+            else{
+                console.log("outside the range");
             }
         }
-        printPattern();
+        checkInRange(79)
+        checkInRange(85)
     </script>
     
 </body>

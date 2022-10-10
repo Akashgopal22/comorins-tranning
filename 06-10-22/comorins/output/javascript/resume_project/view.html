@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <main class="main-content container">
+        <div class="row">
+            <section class="left-section col-4 p-4">
+                <div class="left-content">
+                  
+                    <div class="profile">
+                        <h2 id="name" class="text-white text-center"></h2>
+                        <h4 id="work" class="text-white text-center" ></h4>
+                    </div>
+                    <h4  class="text-white mt-5">Objective</h4>
+                    <p id="objective" class="text-white"></p>
+                    <div class="contact-info">
+                        <h3 class="main-title">Contact Info</h3>
+                        <ul class="text-white">
+                            <li>
+                                <i class="fa fa-phone mr-4"></i>
+                                <span id="phone"></span>
+                              
+                            </li>
+                            <li> 
+                                <i class="fa fa-envelope  mr-4"></i>
+                                <span id="email"></span>
+                            </li>
+                            <li>
+                                <i class="fa fa-map-marker mr-4"></i>
+                                <span id="address" > </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skills-section mt-5">
+                        <h3 class="main-title">Skills</h3>
+                        <ul id="order" class="text-white"></ul>
+                    </div>
+                    <div class="references-section">
+                        <h3 class="main-title mt-5">Personal details</h3>
+                        <ul class="text-white">
+                         <li><b>Father name: </b> <span id="fathername"></span></span> </li>
+                        <li><b>Dob: </b> <span id="dob"></span></span> </li>
+                        <li><b>Geder: </b> <span id="gender"></span></span> </li>
+                        <li><b>Languages known: </b> <span id="languages"></span></span> </li>
+                        <li><b>Nationality: </b> <span id="nationality"></span></span> </li>
+                        </ul>
+                        
+                    
+            </section>
+            <section class="right-section col-8">
+                <div class="right-main-content">
+                    <section class="about sect">
+                        <h2 class="right-title ">About Me</h2>
+                        <p class="para" id="aboutme">
+                            
+                        </p>
+                    </section>
+    
+                    <section class="experince sect">
+                        <h2 class="right-title">Experience</h2>
+                        
+                        <div class="timeline">
+                            <div class="left-tl-content">
+                                <h5 class="tl-title" id="organisation0"></h5>
+                                <p class="para" id="exyear0"></p>
+                            </div>
+                            <div class="right-tl-content">
+                                <div class="tl-content">
+                                    <h5 class="tl-title-2" id="role0"></h5>
+                                </div>
+                            </div>
+                            <div class="left-tl-content">
+                                <h5 class="tl-title" id="organisation1"></h5>
+                                <p class="para" id="exyear1"></p>
+                            </div>
+                            <div class="right-tl-content">
+                                <div class="tl-content">
+                                    <h5 class="tl-title-2" id="role1"></h5>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        
+                    </section>
+                    <section class="education sect">
+                        <h2 class="right-title">education</h2>
+                        <div class="timeline">
+                            <div class="left-tl-content">
+                                <h5 class="tl-title" id="institute0"></h5>
+                                <p class="para" id="year0"></p>
+                            </div>
+                            <div class="right-tl-content">
+                                <div class="tl-content">
+                                    <h5 class="tl-title-2" id="course0">Gcse's</h5>
+                                    <p class="text-primary">Percentage: <span id="percentage0" class="text-dark"></span></p>
+                                 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="left-tl-content">
+                                <h5 class="tl-title" id="institute1"></h5>
+                                <p class="para" id="year1"></p>
+                            </div>
+                            <div class="right-tl-content">
+                                <div class="tl-content">
+                                    <h5 class="tl-title-2" id="course1">Gcse's</h5>
+                                    <p class="text-primary">Percentage: <span id="percentage1" class="text-dark"></span></p>
+                                 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="left-tl-content">
+                                <h5 class="tl-title" id="institute2"></h5>
+                                <p class="para" id="year2"></p>
+                            </div>
+                            <div class="right-tl-content">
+                                <div class="tl-content">
+                                    <h5 class="tl-title-2" id="course2"></h5>
+                                    <p class="text-primary">Percentage: <span id="percentage2" class="text-dark"></span></p>
+                                 
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </section>
+                    <section class="awards sect">
+                        <h2 class="text-primary">Area if interest</h2>
+                        <hr>
+                        <ul id="interestorder">
+
+                        </ul>
+                        <h2 class="text-primary">Certification</h2>
+                        <hr>
+                        <ul id="certiorder">
+
+                        </ul>
+                       
+            </section>
+        </div>
+       
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

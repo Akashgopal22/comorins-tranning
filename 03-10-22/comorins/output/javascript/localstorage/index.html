@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localstorage</title>
+</head>
+<body class=" bg-success">
+
+    <!-- todo using storage -->
+    <div class="wrap bg-white rounded container mt-5 p-5">
+       <h1 class="mb-5">My to-do list</h1>
+       <input type="text" id="textbox"><button class=" ml-5 btn btn-primary rounded-pill pl-5 pr-5 " onclick="todoadd()">Add</button>
+       <ol id="orderlist"></ol>
+       <div class="bottombutton mt-5">
+        <button class="  btn btn-primary rounded-pill pl-5 pr-5">Clear completed</button>
+        <button class="  btn btn-danger rounded-pill pl-5 pr-5"  id="clear" onclick="removelist()">Empty list</button>
+        <button class="  btn btn-success rounded-pill pl-5 pr-5" onclick="storage()">Save list</button>
+
+       </div>
+         
+    </div>
+    <script>
+        // script
+        let arr=[]
+        function todoadd(){
+           
+            let todolist=document.getElementById("textbox").value;
+            arr.push(todolist);
+            display(arr);
+            document.getElementById("textbox").value=""
+            
+        }
+        function display(list_array){
+            let items=""
+            for(let i=0;i<list_array.length;i++){
+                items=items+"<li>"+list_array[i]+"</li>"
+            }
+            document.getElementById("orderlist").innerHTML=items
+        }
+        function storage(){
+            let arrstr=JSON.stringify(arr);
+            localStorage.setItem("todo",arrstr)
+        }
+
+
+
+      
+        
+    </script>
+
+    <!-- <button onclick="test()">storage</button>
+    <script>
+        
+        function test(){
+        sessionStorage.setItem("Name","john");
+        localStorage.setItem("Name","Akash");
+
+        }
+        let list=["a","b","c"];
+        let arr=JSON.stringify(list);
+        localStorage.setItem("alpha",arr)
+        
+        
+
+    </script> -->
+    
+</body>
+</html>

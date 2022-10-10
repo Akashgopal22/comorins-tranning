@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leap year</title>
+</head>
+<body>
+    <script>
+        function checkLeapYear(year){
+            if(year%4==0 && !year%100==0||year%400==0 ){
+                console.log("leapyear")
+            }
+            else{
+                console.log("not leap year")
+            }
+
+        }
+        checkLeapYear(2008)
+        checkLeapYear(2009)
+    </script>
+    
+</body>
+</html>

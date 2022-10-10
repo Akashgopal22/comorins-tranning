@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthemetic operation</title>
+</head>
+<body>
+    <script>
+        function evalNumbers(num1,num2,arthemetic){
+            if(arthemetic=="sum"){
+                let add=num1+num2
+                console .log("sum is "+add)
+            }
+           else if(arthemetic=="sub"){
+                let subtract=num1-num2
+                console .log("subis "+subtract)
+            }
+            else if(arthemetic=="multi"){
+                let multiply=num1*num2
+                console .log("product is "+multiply)
+            }
+            else if(arthemetic=="div"){
+                let divide=num1/num2
+                console .log("division is "+divide)
+            }
+            else if(arthemetic=="mod"){
+                let modulus=num1%num2
+                console .log("modulus is"+modulus)
+            }
+            else{
+                console.log("invalid operatons")
+            }
+
+        }
+        evalNumbers(1,2,"sum")
+        evalNumbers(8,4,"div")
+        evalNumbers(12,2,"mod")
+    </script>
+    
+</body>
+</html>
