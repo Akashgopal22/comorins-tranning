@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbg{
+	position: sticky;
+	top:0;
+	z-index: 1;
+	box-shadow: 0 8px 8px -4px #343a40;
+	margin-bottom: 20px;
+
+	
+}
+a{
+    text-decoration: none !important;
+    
+
+}
+.carousel{
+    z-index: 0
+    }
+
+.firstrow h5{
+	color: white !important;
+}
+
+.navbg a{
+    color: white !important;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.navbg button:hover{
+    color: white;
+    background-color: #e08b6c;
+}
+.navcolor a:hover{
+    color:#e08b6c !important;
+}
+.navbg li{
+    padding-left: 40px;
+}
+.firstrow .left-section h5 {
+    color:white !important ;
+}
+.breaking-news-section{
+	padding: 0 30px 0 60px;
+	display: flex;
+}
+#btext{
+	width: 200px;
+	font-size: 16px;
+	text-transform: uppercase;
+	color:#e08b6c;
+	font-weight: 600;
+	margin: auto 0;
+}
+.breaking-news{
+	padding: 30px;
+	color: #fff;
+	text-decoration: none;	
+	font-weight: 400;
+}
+.breaking-news:hover,.social-icons i:hover{
+	color:#e08b6c !important;
+	cursor: pointer;
+	text-decoration: none;
+}
+.bntime{
+	display: inline-block;
+	color: white;
+	padding: 0 10px;
+}
+.left-section a{
+	color: white;
+}
+li{
+	list-style: none;
+}
+.hover1:hover{
+	transform: scale(1.2);
+}
+i:hover{
+	color: #e08b6c !important;
+}

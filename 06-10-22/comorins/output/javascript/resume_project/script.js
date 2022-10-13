@@ -89,7 +89,7 @@ function adddetails(key,value,index=null,mainkey=null){
 
 function storage(){
     if(!localStorage.getItem("resume")){
-        localStorage.setItem("resume",JSON.stringify([]))
+        localStorage.setItem("resume",JSON.stringify())
     }
     let fullresume=JSON.parse(localStorage.getItem("resume"))
     fullresume.push(resume_list)

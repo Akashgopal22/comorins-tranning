@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mainnews</title>
+    <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbg bg-dark">
+        <div class="container">
+            <a href="index.html" class="text-center text-white"> <img src="image/logo.png" width="40px" alt="">
+            <h4>IACE</h4>
+            </a>
+        <div class="collapse navcolor navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto ">
+            <li class="nav-item active">
+                <a class="nav-link" href="trending.html"><button class="btn btn-white"> <b>Trending today</b> </button></a>
+              </li>
+        
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="political.html">Politics</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="world.html">World</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bussiness.html">Business</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="travel.html">Travel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="technology.html">Technology</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sport.html">sport</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="bookmark.html"><i class="fa-regular fa-bookmark  text-white hover2"></i></a>
+              </li>
+             
+          </ul>
+        </div>
+        </div>
+        
+      </nav>
+      
+      <!-- section start -->
+    <section>
+        <div class="container">
+          <li class="nav-item text-right">
+            <div class="btn" onclick="book()"><i class="fa-regular fa-bookmark fa-2x text-dark nav-link hover1"></i></div>
+          </li>
+            <h1 id="title"></h1>
+           
+            
+            <div class="text-center">
+              <img src=""  width="60%" id="mainimage" alt="">
+            </div>
+           
+            
+            <p id="maincontent"></p>
+        </div>
+        
+    </section>
+    <!-- section end -->
+    <script>
+      let data =JSON.parse(window.localStorage.getItem('news'));
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const show = urlParams.get('name');
+      for(let i=0;i<data.length;i++){
+        if(show==data[i].id){
+        document.getElementById("title").innerHTML=data[i].subcontent;
+        document.getElementById("mainimage").src=data[i].image;
+        document.getElementById("maincontent").innerHTML=data[i].maincontent
+
+        }
+      }
+  
+      
+      function book(){
+        if(!localStorage.getItem("bookmarks")){
+        localStorage.setItem("bookmarks",JSON.stringify([]))
+    }
+        let bookmark=JSON.parse(localStorage.getItem("bookmarks"))
+        for(i=0;i<data.length;i++){
+          if(show==data[i].id){
+            bookmark.push(data[i])
+            
+          } 
+        }
+        localStorage.setItem("bookmarks",JSON.stringify(bookmark))
+      }
+      
+      
+
+    </script>
+</body>
+</html>

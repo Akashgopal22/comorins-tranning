@@ -2,8 +2,8 @@ let data =JSON.parse(window.localStorage.getItem('resume'));
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const show = urlParams.get('name');
-// alert(show)
-for(let i=0;i<data.length;i++){
+alert(show)
+for(let i=0;i<data.length;i++ ){
   if(show==data[i].name){
 
     document.getElementById("name").innerHTML=data[i].name;
