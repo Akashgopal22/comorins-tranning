@@ -529,6 +529,43 @@ let newsdetails=
          category:"sport"
 
       },
+      {
+         id:44,
+         title:"",
+         image:"https://c.ndtvimg.com/2022-10/dlqcc4hg_iphone-charger_625x300_14_October_22.jpg",
+         subhead:"",
+         subcontent:"For iPhones Without Chargers, Apple Fined $20 Million In This Country",
+         maincontent:" A Brazilian judge fined Apple $20 million Thursday for selling iPhones without chargers, calling it an abusive practice that forces customers to buy an additional prThe decision, which can be appealed, came after Brazil's justice ministry slapped a separate fine of nearly $2.5 million on Apple in September over the same issue and barred the US tech giant from selling its iPhone 12 and 13 models without chargerThe new fine -- 100 million reais -- was awarded by a Sao Paulo civil court judge as damages in a lawsuit filed by the Brazilian Consumers' Associatio",
+         time:"October 14, 2022  ",
+         newstype:"",
+         category:"breaking"
+
+      },
+      {
+         id:45,
+         title:"",
+         image:"https://c.ndtvimg.com/2022-10/2416rhs4_bhagaval-singh_625x300_13_October_22.jpg",
+         subhead:"",
+         subcontent:"Kerala Killer's Facebook Posts Just Days After Women's Torture, Murder",
+         maincontent:" Bhagaval Singh, one of the three persons in Kerala accused of torturing and killing two women and possibly eating their flesh in human sacrifice, often posted poetry on Facebook, and described himself as self-employed in alternative mediciBhagaval Singh, 60, was well-known in the town as a social worker, always polite.The traditional healer and poet, known to be mild-mannered by friends and neighbours, played a part in the grisly murders that have stunned the nation. The village Elanthoor in Pathanamthitta is in shock, replaying their interactions with the family, over and over.",
+         time:"October 14, 2022  ",
+         newstype:"",
+         category:"breaking"
+
+      },
+      {
+         id:46,
+         title:"",
+         image:"https://c.ndtvimg.com/2020-08/kspdp1do_ms-dhoni-sachin-tendulkar-afp_625x300_15_August_20.jpg?im=FeatureCrop,algorithm=dnn,width=806,height=605",
+         subhead:"",
+         subcontent:"Wanted To Play Like Sachin Tendulkar But Realised His Style Was Different: MS Dhoni",
+         maincontent:" In a video released by Chennai Super Kings on their Twitter account on Thursday, Mahendra Singh Dhoni confessed that Sachin Tendulkar was his cricketing idol and he wanted to play like the Master Blaster while growing up. India's World Cup-winning captain added in the video that he tried playing like Sachin but later realised that his style of play was different and he could not play like him. Growing up when I was your age, I used to watch him play and always thought I wanted to play like him but couldn't. Inside in my heart I always wanted to play like him, he was a cricketing idol growing up, answered Dhoni.",
+         time:"October 14, 2022  ",
+         newstype:"",
+         category:"breaking"
+
+      },
+      
       
       
       
@@ -553,28 +590,27 @@ let newsbranch={
       document.getElementById("time"+i).innerHTML=newsdata[i].time;
       
       let next="";
+      let next1=""
       next="<a href='view.html?name="+newsdata[i].id+"'target=_self>"+newsdata[i].subcontent+"</a>"
       document.getElementById("subcontent"+i).innerHTML=next
 
       }
    }
-   let list=JSON.parse(window.localStorage.getItem('newsbranch'))
-   for(i=0;i<list.length;i++){
-      let breaking=list[i].breaking
-      let element=""
-      for (let i=0;i<breaking.length;i++){
-         element=element+"<li class='bntime'></> <a href='' class='breaking-news'>"+breaking[i]+"</a></li>"
-         
+   let element=""
+   for (let i=0;i<newsdata.length;i++){
+      if(newsdata[i].category=="breaking"){
+        
+         element=element+"<li class='bntime'></> <a  class='breaking-news' href='view.html?name="+newsdata[i].id+"'target=_self>"+newsdata[i].subcontent+"</a></li>";
+         document.getElementById("breaking").innerHTML=element; 
       }
-      document.getElementById("breaking").innerHTML=element;  
+   } 
+   
 
-   }
-   // for politics
    let loop1="";
    for (let i=0;i<newsdata.length;i++){
       if(newsdata[i].category=="politics"){
         
-         loop1= loop1+'<div class=" col-4  " style="width: 18rem;"><div class="alignment" style="min-height:200px;"><img class="card-img-top" src="'+newsdata[i].image+'" ></div><div class="card-body"><h5 class="card-title">'+"<a href='view.html?name="+newsdata[i].id+"'target=_self>"+newsdata[i].subcontent+"</a>"+'</h5><p class="card-text"></p>'+ newsdata[i].time+'</a></div></div>'
+         loop1= loop1+'<div class=" card1 col-4  " style="width: 18rem;"><div class="alignment" style="min-height:200px;" ><a href="view.html?name='+newsdata[i].id+'"><img class="card-img-top" height="200px"  src="'+newsdata[i].image+'" ></a></div><div class="card-body"><h5 class="card-title">'+"<a href='view.html?name="+newsdata[i].id+"'target=_self>"+newsdata[i].subcontent+"</a>"+'</h5><p class="card-text"></p>'+ newsdata[i].time+'</a></div></div>'
          document.getElementById("political").innerHTML =loop1
       }
    } 
@@ -583,7 +619,7 @@ let newsbranch={
    for (let i=0;i<newsdata.length;i++){
       if(newsdata[i].category=="home1"){
         
-         loop2= loop2+'<div class=" col-4  " style="width: 18rem;"><div class="alignment" style="min-height:200px;"><img class="card-img-top" src="'+newsdata[i].image+'" ></div><div class="card-body"><h5 class="card-title">'+"<a href='view.html?name="+newsdata[i].id+"'target=_self>"+newsdata[i].subcontent+"</a>"+'</h5><p class="card-text"></p>'+ newsdata[i].time+'</a></div></div>'
+         loop2= loop2+'<div class=" card1 col-4  " style="width: 18rem;"><div class="alignment" style="min-height:200px;" ><a href="view.html?name='+newsdata[i].id+'"><img height="200px" class="card-img-top" src="'+newsdata[i].image+'" ></a></div><div class="card-body"><h5 class="card-title">'+"<a href='view.html?name="+newsdata[i].id+"'target=_self>"+newsdata[i].subcontent+"</a>"+'</h5><p class="card-text"></p>'+ newsdata[i].time+'</a></div></div>'
          document.getElementById("trending").innerHTML =loop2
       }
    }
@@ -592,7 +628,7 @@ let newsbranch={
    for (let i=0;i<newsdata.length;i++){
       if(newsdata[i].category=="technology"){
         
-         loop3= loop3+'<div class=" col-4  " style="width: 18rem;"><div class="alignment" style="min-height:200px;"><img class="card-img-top" src="'+newsdata[i].image+'" ></div><div class="card-body"><h5 class="card-title">'+"<a href='view.html?name="+newsdata[i].id+"'target=_self>"+newsdata[i].subcontent+"</a>"+'</h5><p class="card-text"></p>'+ newsdata[i].time+'</a></div></div>'
+         loop3= loop3+'<div class=" card1 col-4  " style="width: 18rem;"><div class="alignment" style="min-height:200px;" ><a href="view.html?name='+newsdata[i].id+'"><img class="card-img-top" height="200px" src="'+newsdata[i].image+'" ></a></div><div class="card-body"><h5 class="card-title">'+"<a href='view.html?name="+newsdata[i].id+"'target=_self>"+newsdata[i].subcontent+"</a>"+'</h5><p class="card-text"></p>'+ newsdata[i].time+'</a></div></div>'
          document.getElementById("common").innerHTML =loop3
       }
    }
