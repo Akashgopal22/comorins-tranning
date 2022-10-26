@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="css/theme.css">
     <title>bookmark</title>
 </head>
 <body>
@@ -108,7 +108,7 @@
                 let book =JSON.parse(window.localStorage.getItem('bookmarks'));
                 let loop=""
                 for (let i=0;i<book.length;i++){
-                  loop= loop+'<div class=" col-4 card1 " style="width: 18rem;"><div class="alignment" style="min-height:200px;" ><a href="view.html?name='+book[i].id+'"><img height="200px"  class="card-img-top" src="'+book[i].image+'" ></a></div><div class="card-body"><h5 class="card-title">'+"<a href='view.html?name="+book[i].id+"'target=_self>"+book[i].subcontent+"</a>"+'</h5><p class="card-text"></p>'+ book[i].time+'</a><div><a href="" onclick=(toremove('+ i+')) class="btn btn-primary ">delete</a></div></div></div>'
+                  loop= loop+'<div class=" col-4 card1 " style="width: 18rem;"><div class="alignment" style="min-height:200px;" ><a href="view.html?name='+book[i].id+'"><img height="200px"  class="card-img-top" src="'+book[i].image+'" ></a></div><div class="card-body"><h5 class="card-title">'+"<a href='view.html?name="+book[i].id+"'target=_self>"+book[i].subcontent+"</a>"+'</h5><p class="card-text"></p>'+ book[i].time+'</a><div><a href="" onclick=(toremove('+ i+')) class="btn btn-danger ">delete</a></div></div></div>'
                       
                 } 
                 document.getElementById("cardloop").innerHTML=loop    
@@ -122,9 +122,5 @@
                 
             }  
       </script>
-
-
-
-    
 </body>
 </html>
