@@ -105,7 +105,7 @@ function namedisplay(){
     }
     document.getElementById("order").innerHTML=element
 }
-function display(){
+function display(){     
 
     document.getElementById("obj").innerHTML=JSON.stringify(resume_list)
 }

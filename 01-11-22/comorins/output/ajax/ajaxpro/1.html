@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // symbol
+        // let obj={
+        //     [Symbol()]:"akash"
+        // // }
+        // proxy
+        // let obj={
+        //     name:"Akash",
+        //     no1:0,
+        //     no2:7,
+        //     no3:6,
+  
+        // }
+        // console.log(obj)
+        // // to update deails in object use proxy
+        // let handler={
+        //     get:function(targetElement,prop){
+        //             return targetElement[prop]
+        //     },
+        //     set:function(targetElement,prop,value){
+        //         if(typeof value=="number"){
+        //             targetElement[prop]=value
+
+        //         }
+        //         else{
+        //             console.log("error")
+        //         }
+                
+
+        //     }
+        // }
+       
+        // obj=new Proxy(obj,handler)
+        // obj.no1=8
+        // console.log(obj)
+    //   spread operator
+    // let obja={
+    //     name:"akash",
+    //     roll:2,
+    //     id:1
+    // }
+    // let objb={
+    //     name1:"john",
+    //     roll1:3,
+    //     id1:2
+    // }
+    // let objc={...obja,...objb}
+    // console.log(objc)
+    // rest operator
+    // function rest(a,b,...c){
+    //     console.log(a,b,c)
+    // }
+    // rest (1,2,3,4,5,6,7,8)
+    // arrow function
+//    let  sum=(a,b)=> {
+//         let c=a+b
+//         console.log(c)
+//     }
+//   sum(10,20)
+// destructuring
+// let obj =[{id:1,name:"Akash"},{id:2,name:"john"}]
+// let [{id:x,name:y}]=obj
+// console.log(x,y)
+// // for of
+// let add=0
+// for(let obja of obj){
+//     console.log(obja.name,obja.id)
+//     add+=obja.id
+    
+// }
+// console.log(add)
+// map method
+// let mark =[35,45,26,50,100]
+// let result=mark.map((grade)=>{
+//     return grade>=35?"pass":"fail"
+   
+// })
+// console.log(result)
+// console.log(mark)
+// let detail=[
+//     {id:1,firstname:"john",lastname:"gilbert"},
+//     {id:2,firstname:"jacob",lastname:"gilbert"},
+//     {id:3,firstname:"peter",lastname:"gilbert"},
+// ]
+// let obj=detail.map((full)=>{
+//   let fulldetail=`${full.firstname} ${full.lastname}`
+//   let details={id:full.id,fullname:fulldetail}
+//   return details 
+// })
+// console.log(obj)
+// // filter
+// let odd=[0,1,2,3,4,5,6,7,8,9,10]
+// let find=odd.filter(val=>val%2==0&&val!==0)
+// console.log(find)
+// stat=(a,b)=>console.log(a+b)
+
+// stat(2,3)
+class book{
+    constructor(a,b){
+        this.a=a;
+        this.b=b
+    }
+    getname(){
+        console.log(`${this.a} ${this.b}`)
+
+    }
+
+    
+}
+// let obj=new book("suresh","kumar")
+
+class magazine extends book{
+    constructor(a,b){
+        super(a,b)
+    }
+    add(){
+        super.getname()
+    }
+}
+let obj1=new magazine("suresh" ,"kumar")
+obj1.add()    
+// let c1=(e)=>{
+//     this.e=e
+
+// }
+// let c2=new c1("akash")
+// console.log(c2);
+// class Hero {
+//   constructor(heroName) {
+//     this.heroName = heroName;
+//   }
+//   logName() {
+//     console.log(this.heroName);
+//   }
+// }
+// const batman = new Hero('Batman');
+// batman.logName()
+// class Hero {
+//   constructor(heroName) {
+//     this.heroName = heroName;
+//   }
+//   logName = () => {
+//     console.log(this.heroName);
+//   }
+// }
+// const batman = new Hero('Batman');
+// batman.logName()
+function arr(){
+  console.log(this)
+}
+arr()
+let arr1=()=>console.log(this)
+arr1()
+</script>
+</body>
+</html>
